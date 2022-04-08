@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class CPlayerMove : MonoBehaviour
+public class CPlayerMove : MonoBehaviour, IDragHandler
 {
     Animator _anim = null;
     protected Animator myAnim
@@ -26,7 +27,12 @@ public class CPlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myAnim.SetFloat("x", Input.GetAxis("Horizontal")); // 키보드 상하버튼을 받아옴
-        myAnim.SetFloat("y", Input.GetAxis("Vertical")); // 키보드 좌우버튼을 받아옴
+        //myAnim.SetFloat("x", Input.GetAxis("Horizontal")); // 키보드 상하버튼을 받아옴
+        //myAnim.SetFloat("y", Input.GetAxis("Vertical")); // 키보드 좌우버튼을 받아옴
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        print("a");
     }
 }
