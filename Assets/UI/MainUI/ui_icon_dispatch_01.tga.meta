@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: a0648ca527560584d88cbfc29505614f
+guid: f84dbff094364ed439a96aab0f3c0e5f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4403676578939204108
+    second: lock_icon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,11 +104,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lock_icon
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 210
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd0f9eab7ff2e2c0800000000000000
+      internalID: -4403676578939204108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: dfa3c9e2d09b78043806271ea6d96591
     internalID: 0
     vertices: []
     indices: 
