@@ -6,9 +6,10 @@ using UnityEngine.EventSystems;
 public class cPlayerMove : cCharacter
 {
     public FloatingJoystick joystick;
+    public Transform camTrans;
+
     Vector3 moveVec;
 
-    Vector2 joystickPos;
     public float MoveSpeed = 5.0f;
 
     // Update is called once per frame

@@ -431,6 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+  camTrans: {fileID: 0}
   MoveSpeed: 5
 --- !u!54 &215617456
 Rigidbody:
@@ -726,22 +727,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &373435585
-Rigidbody:
+--- !u!136 &373435586
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373435582}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.0035
+  m_Height: 0.0175
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.0085, z: 0}
 --- !u!1 &377075714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -110.2, y: 90}
+  m_AnchoredPosition: {x: -110.200195, y: 90}
   m_SizeDelta: {x: 165, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &807196140
@@ -1625,6 +1624,8 @@ GameObject:
   m_Component:
   - component: {fileID: 886271382}
   - component: {fileID: 886271381}
+  - component: {fileID: 886271383}
+  - component: {fileID: 886271384}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1645,6 +1646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 913885425}
+  camTrans: {fileID: 1084073981}
   MoveSpeed: 5
 --- !u!4 &886271382
 Transform:
@@ -1662,6 +1664,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &886271383
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886271380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35
+  m_Height: 1.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!54 &886271384
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886271380}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &911447112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,14 +1852,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084073980}
-  m_LocalRotation: {x: 0.10526164, y: -0, z: -0, w: 0.9944446}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 2.17, z: 0.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 377075717}
   m_Father: {fileID: 886271382}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 12.084, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!114 &1084073982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,9 +1873,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 3821005505396134165}
+  myCam: {fileID: 377075717}
   SmoothRotSpeed: 5
   HorizontalRotSpeed: 2
-  RootRotate: 0
+  VerticalRotRange: {x: -30, y: 40}
+  CrashMask:
+    serializedVersion: 2
+    m_Bits: 0
+  VerticalRotSpeed: 2
+  CollsionOffset: 0.5
 --- !u!1 &1087990924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,8 +4881,8 @@ MonoBehaviour:
   handleRange: 1
   deadZone: 0
   axisOptions: 0
-  snapX: 0
-  snapY: 0
+  snapX: 1
+  snapY: 1
   background: {fileID: 3821005506507838606}
   handle: {fileID: 3821005504616148628}
 --- !u!114 &3821005506507838592
