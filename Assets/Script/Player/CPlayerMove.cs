@@ -3,36 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CPlayerMove : MonoBehaviour, IDragHandler
-{
-    Animator _anim = null;
-    protected Animator myAnim
-    {
-        get // 사용할 때 바로 적용되도록 property 사용
-        {
-            if (_anim == null) _anim = this.GetComponent<Animator>(); // _anim을 호출하면 항상 값을 가지고 있다는 확신이 생김 
+public class CPlayerMove : cCharacter
+{    
+    public FloatingJoystick joystick;
+    Vector3 moveVec;
 
-            if (_anim == null) _anim = this.GetComponentInChildren<Animator>(); // 자식에 있을때도 호출
-
-            return _anim;
-        }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Vector2 joystickPos;
+    public float MoveSpeed = 2.0f;
 
     // Update is called once per frame
     void Update()
     {
-        myAnim.SetFloat("x", Input.GetAxis("Horizontal")); // 키보드 상하버튼을 받아옴
-        myAnim.SetFloat("y", Input.GetAxis("Vertical")); // 키보드 좌우버튼을 받아옴
+        // 조이스틱 입력값
+        float x = joystick.Horizontal;
+        float z = joystick.Vertical;
+
+        // 이동
+        moveVec = new Vector3(x, 0, z) * MoveSpeed * Time.deltaTime;
+        myRigid.MovePosition(myRigid.position + moveVec);
+
+        // 입력이 없을경우 회전x
+        if (moveVec.sqrMagnitude == 0) return; // sqrMganitude : 벡터의 제곱크기 반환
+
+        // 회전
+        Quaternion dirQuat = Quaternion.LookRotation(moveVec); // 회전해야하는 값을 저장
+        Quaternion moveQuat = Quaternion.Slerp(myRigid.rotation, dirQuat, 0.3f); // 현재 회전값과 바뀔 회전값을 보간
+        myRigid.MoveRotation(moveQuat);
+
     }
 
-    public void OnDrag(PointerEventData eventData)
+    private void LateUpdate()
     {
-        print("a");
+        myAnim.SetFloat("x", joystick.Horizontal);
+        myAnim.SetFloat("y", joystick.Vertical);
     }
 }

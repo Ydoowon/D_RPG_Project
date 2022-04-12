@@ -40,6 +40,8 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     private Vector2 input = Vector2.zero;
 
+    public CPlayerMove cPlayer;
+
     protected virtual void Start()
     {
         HandleRange = handleRange;
@@ -55,6 +57,8 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         handle.anchorMax = center;
         handle.pivot = center;
         handle.anchoredPosition = Vector2.zero;
+
+        cPlayer = GameObject.Find("Player").GetComponent<CPlayerMove>();
     }
 
     public virtual void OnPointerDown(PointerEventData eventData)
@@ -70,10 +74,13 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
         Vector2 position = RectTransformUtility.WorldToScreenPoint(cam, background.position);
         Vector2 radius = background.sizeDelta / 2;
-        input = (eventData.position - position) / (radius * canvas.scaleFactor);
+        input = (eventData.position - position) / (radius * canvas.scaleFactor);        
         FormatInput();
         HandleInput(input.magnitude, input.normalized, radius, cam);
         handle.anchoredPosition = input * radius * handleRange;
+
+        // 캐릭터 이동
+        //StartCoroutine(cPlayer.JoystickMove(input));
     }
 
     protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
