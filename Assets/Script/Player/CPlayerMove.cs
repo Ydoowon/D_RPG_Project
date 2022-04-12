@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class cPlayerMove : cCharacter
+public class CPlayerMove : cCharacter
 {
     public FloatingJoystick joystick;
     public Transform camTrans;
