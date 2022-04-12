@@ -31,7 +31,10 @@ public class cSpringArm : MonoBehaviour
     {
         TargetRot.y += joystick.Horizontal * HorizontalRotSpeed; // 좌우회전
         TargetRot.x -= joystick.Vertical * VerticalRotSpeed; // 상하회전
-        
+
+        //TargetRot.x -= Input.GetAxis("Mouse Y") * VerticalRotSpeed; // 상하회전
+        //TargetRot.y += Input.GetAxis("Mouse X") * HorizontalRotSpeed; // 좌우회전
+
         // 상하 범위 설정
         if (TargetRot.x > 180.0f)
         {

@@ -431,8 +431,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  camTrans: {fileID: 0}
+  myCharacter: {fileID: 0}
+  myCam: {fileID: 0}
   MoveSpeed: 5
+  SmoothRotSpeed: 1
 --- !u!54 &215617456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1646,8 +1648,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 913885425}
-  camTrans: {fileID: 1084073981}
+  myCharacter: {fileID: 373435583}
+  myCam: {fileID: 1084073981}
   MoveSpeed: 5
+  SmoothRotSpeed: 0.1
 --- !u!4 &886271382
 Transform:
   m_ObjectHideFlags: 0
@@ -1874,8 +1878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 3821005505396134165}
   myCam: {fileID: 377075717}
-  SmoothRotSpeed: 5
-  HorizontalRotSpeed: 2
+  SmoothRotSpeed: 100
+  HorizontalRotSpeed: 1
   VerticalRotRange: {x: -30, y: 40}
   CrashMask:
     serializedVersion: 2
