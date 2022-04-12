@@ -17,6 +17,19 @@ public class CPlayerMove : cCharacter
     // Update is called once per frame
     void Update()
     {
+        JoystickMove();
+
+    }
+
+    private void LateUpdate()
+    {
+        // 애니메이션 - 블랜드트리
+        myAnim.SetFloat("x", joystick.Horizontal);
+        myAnim.SetFloat("y", joystick.Vertical);
+    }
+
+    void JoystickMove()
+    {
         // 조이스틱 입력값
         Vector2 moveInput = new Vector2(joystick.Horizontal, joystick.Vertical);
 
@@ -34,11 +47,6 @@ public class CPlayerMove : cCharacter
             myRigid.MovePosition(myRigid.position + moveVec);
         }
 
-        // 이동
-        //moveVec = new Vector3(moveInput.x, 0, moveInput.y) * MoveSpeed * Time.deltaTime;
-        //myRigid.MovePosition(myRigid.position + moveVec);
-
-
         // 입력이 없을경우 회전x
         if (moveVec.sqrMagnitude == 0) return; // sqrMganitude : 벡터의 제곱크기 반환
 
@@ -49,13 +57,5 @@ public class CPlayerMove : cCharacter
             Quaternion moveQuat = Quaternion.Slerp(myRigid.rotation, dirQuat, SmoothRotSpeed); // 현재 회전값과 바뀔 회전값을 보간
             myRigid.MoveRotation(moveQuat);
         }
-
-    }
-
-    private void LateUpdate()
-    {
-        // 애니메이션 - 블랜드트리
-        myAnim.SetFloat("x", joystick.Horizontal);
-        myAnim.SetFloat("y", joystick.Vertical);
     }
 }
