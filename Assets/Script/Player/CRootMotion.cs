@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class CPlayerMove : MonoBehaviour, IDragHandler
+public class CRootMotion : MonoBehaviour
 {
     Animator _anim = null;
     protected Animator myAnim
@@ -18,21 +17,11 @@ public class CPlayerMove : MonoBehaviour, IDragHandler
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform myRoot;
+    public float MoveSpeed = 1.0f; // 플레이어 이동 속도
 
-    // Update is called once per frame
-    void Update()
+    private void OnAnimatorMove()
     {
-        myAnim.SetFloat("x", Input.GetAxis("Horizontal")); // 키보드 상하버튼을 받아옴
-        myAnim.SetFloat("y", Input.GetAxis("Vertical")); // 키보드 좌우버튼을 받아옴
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        print("a");
+        myRoot.GetComponent<Rigidbody>().MovePosition(myRoot.position + myAnim.deltaPosition * MoveSpeed); // 물리적인 이동을 하게 해줌
     }
 }
