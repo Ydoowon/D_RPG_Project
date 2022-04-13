@@ -43,7 +43,8 @@ public class CPlayerMove : cCharacter
             // 카메라가 바라보는 방향으로 이동하도록 설정
             myCharacter.forward = moveDir;
             moveVec = moveDir * MoveSpeed * Time.deltaTime;
-            myRigid.MovePosition(myRigid.position + moveVec);
+            //myRigid.MovePosition(myRigid.position + moveVec);
+            this.transform.Translate(moveVec,Space.World);
         }
 
         // 입력이 없을경우 회전x

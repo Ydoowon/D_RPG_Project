@@ -102,6 +102,12 @@ ModelImporter:
   - first:
       74: 4072024313043860777
     second: Tiki_die
+  - first:
+      74: 6544048925670542895
+    second: Tiki_one_punch_step1 (1)
+  - first:
+      74: -5644697109399878096
+    second: Tiki_one_punch_step3 (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -798,11 +804,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Tiki_one_punch
-      takeName: Tiki_one_punch
+      name: Tiki_one_punch_step3 (1)
+      takeName: Tiki_one_punch_step3
       internalID: 0
-      firstFrame: 41
-      lastFrame: 340
+      firstFrame: 0
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -811,10 +817,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -1142,7 +1148,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Follower_LangleyAsubell_Body
+    rootMotionBoneName: Bip001
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
