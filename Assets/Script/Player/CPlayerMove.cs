@@ -23,14 +23,8 @@ public class CPlayerMove : cCharacter
 
     private void LateUpdate()
     {
-<<<<<<< HEAD
-        // 애니메이션 - 블랜드트리
         myAnim.SetFloat("x", joystick.Horizontal);
         myAnim.SetFloat("y", joystick.Vertical);
-=======
-        myAnim.SetFloat("x", Input.GetAxis("Horizontal")); // 키보드 상하버튼을 받아옴
-        myAnim.SetFloat("y", Input.GetAxis("Vertical")); // 키보드 좌우버튼을 받아옴
->>>>>>> main
     }
 
     void JoystickMove()
