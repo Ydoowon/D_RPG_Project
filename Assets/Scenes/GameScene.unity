@@ -565,7 +565,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 299400666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 886271385}
+        m_TargetAssemblyTypeName: cAttackManager, Assembly-CSharp
+        m_MethodName: BasicAttack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &299400666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,20 +741,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &373435586
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373435582}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.0035
-  m_Height: 0.0175
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.0085, z: 0}
 --- !u!1 &377075714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886271382}
   - component: {fileID: 886271381}
+  - component: {fileID: 886271385}
   - component: {fileID: 886271383}
   - component: {fileID: 886271384}
   m_Layer: 0
@@ -1698,6 +1697,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &886271385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886271380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b493716019bebc4789d56adef140b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911447112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,14 +1890,14 @@ MonoBehaviour:
   joystick: {fileID: 3821005505396134165}
   myCam: {fileID: 377075717}
   SmoothRotSpeed: 100
-  HorizontalRotSpeed: 1
+  HorizontalRotSpeed: 2
   VerticalRotRange: {x: -40, y: 40}
   CrashMask:
     serializedVersion: 2
     m_Bits: 128
   VerticalRotSpeed: 2
   CollsionOffset: 0.5
-  SmoothZoomSpeed: 5
+  SmoothZoomSpeed: 2
 --- !u!1 &1087990924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,7 +1980,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1087990927}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 886271385}
+        m_TargetAssemblyTypeName: cAttackManager, Assembly-CSharp
+        m_MethodName: Skill_1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1087990927
 MonoBehaviour:
   m_ObjectHideFlags: 0

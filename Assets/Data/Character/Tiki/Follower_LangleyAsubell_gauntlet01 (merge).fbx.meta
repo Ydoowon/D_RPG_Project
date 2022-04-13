@@ -801,7 +801,7 @@ ModelImporter:
       name: Tiki_one_punch
       takeName: Tiki_one_punch
       internalID: 0
-      firstFrame: 0
+      firstFrame: 41
       lastFrame: 340
       wrapMode: 0
       orientationOffsetY: 0

@@ -53,7 +53,7 @@ public class cSpringArm : MonoBehaviour
         // 카메라를 아래로 많이 내리면 땅과 부딫혀서 zoom된 것처럼 보이게 함
         Ray ray = new Ray(this.transform.position, -this.transform.forward);
 
-        myCam.Translate(Vector3.forward * ZoomDist);
+        // 줌 되고 나서 원래대로 다시 돌아옴(줌 거리 조절)
         ZoomDist = Mathf.Lerp(ZoomDist, InitialZoomDist, Time.deltaTime * SmoothZoomSpeed);
 
         if (Physics.Raycast(ray, out RaycastHit hit, CollsionOffset + ZoomDist, CrashMask))
