@@ -10,7 +10,7 @@ TextureImporter:
     second: Select_C_BG
   - first:
       213: 8555223018750134182
-    second: ui_btn_01_7
+    second: Back_icon
   - first:
       213: 862117152406969749
     second: ui_btn_01_9
@@ -326,6 +326,27 @@ TextureImporter:
       bones: []
       spriteID: b73265e857b08a540800000000000000
       internalID: 5019274384231506811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_icon
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 659
+        width: 34
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7c8de02024ab670800000000000000
+      internalID: 8555223018750134182
       vertices: []
       indices: 
       edges: []
