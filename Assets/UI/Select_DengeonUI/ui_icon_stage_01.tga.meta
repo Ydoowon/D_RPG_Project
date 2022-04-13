@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: d30253e1eb4ecbf4ab215e77994e64a3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3130176382398596072
+    second: 01_dengeon_icon
+  - first:
+      213: 8180626665674513352
+    second: 02_dengeon_icno
+  - first:
+      213: -2015391124749423319
+    second: background
+  - first:
+      213: 7235501101064552290
+    second: select_dengeon
+  - first:
+      213: -8312531471227395526
+    second: 03_dengeon_icon
+  - first:
+      213: -580630423685690372
+    second: 04_dengeon_icon
+  - first:
+      213: -3807152509582395723
+    second: 05_dengeon_icon
+  - first:
+      213: 5744630065403835656
+    second: 06_dengeon_icon
+  - first:
+      213: -4147667889854651716
+    second: 07_dengeon_icon
+  - first:
+      213: 5602953139296456589
+    second: 08_dengeon_icon
+  - first:
+      213: -3699097614191608104
+    second: 09_dengeon_icon
+  - first:
+      213: 7097949019448013813
+    second: 10_dengeon_icon
+  - first:
+      213: 181856021678900517
+    second: 11_dengeon_icon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +80,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +140,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 01_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 191
+        width: 123
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e38f2dd5de907b20800000000000000
+      internalID: 3130176382398596072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02_dengeon_icno
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 190
+        width: 125
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb1e9f0c9c678170800000000000000
+      internalID: 8180626665674513352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 936
+        width: 210
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92de5d53374e704e0800000000000000
+      internalID: -2015391124749423319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: select_dengeon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 126
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f76e48ae9a96460800000000000000
+      internalID: 7235501101064552290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3
+        width: 123
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326c392ba4f3ac80800000000000000
+      internalID: -8312531471227395526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 804
+        width: 133
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb0e6ab4bf21f7f0800000000000000
+      internalID: -580630423685690372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 616
+        width: 125
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6ba94b6f64a2bc0800000000000000
+      internalID: -3807152509582395723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 06_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 751
+        width: 128
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805bc6eab9609bf40800000000000000
+      internalID: 5744630065403835656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 781
+        width: 119
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb26bea87068076c0800000000000000
+      internalID: -4147667889854651716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 08_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 597
+        width: 123
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fcce8c130b1cd40800000000000000
+      internalID: 5602953139296456589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 09_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 566
+        width: 129
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de3d9c815a2aacc0800000000000000
+      internalID: -3699097614191608104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1
+        width: 126
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f702d60bf08260800000000000000
+      internalID: 7097949019448013813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11_dengeon_icon
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 810
+        width: 120
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525cf649615168200800000000000000
+      internalID: 181856021678900517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
