@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 8600f5c2e916fb24f934f57b60758cf9
+guid: 4e41bfab9e66e4d4e996f5ca1f75871f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9014270703759190325
-    second: OptionIcon
-  - first:
-      213: -7143350737838849576
-    second: option_bg
-  - first:
-      213: -3511996535513146776
-    second: option_top
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,9 +41,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -110,70 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: OptionIcon
-      rect:
-        serializedVersion: 2
-        x: 881
-        y: 273
-        width: 45
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc61939fd80e6e280800000000000000
-      internalID: -9014270703759190325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: option_top
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 120
-        width: 294
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86a165022c1e24fc0800000000000000
-      internalID: -3511996535513146776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: option_bg
-      rect:
-        serializedVersion: 2
-        x: 599
-        y: 271
-        width: 64
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1471dd958bddc90800000000000000
-      internalID: -7143350737838849576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
