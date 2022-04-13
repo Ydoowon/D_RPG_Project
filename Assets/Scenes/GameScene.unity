@@ -1647,10 +1647,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 913885425}
-  myCharacter: {fileID: 373435583}
+  myCharacter: {fileID: 886271382}
   myCam: {fileID: 1084073981}
   MoveSpeed: 5
-  SmoothRotSpeed: 0.1
+  SmoothRotSpeed: 1
 --- !u!4 &886271382
 Transform:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class cAttackManager : cCharacter
     {
         if (!myAnim.GetBool("IsAttack"))
         {
-            myAnim.SetFloat("Combo", (int)(Combo++ % 4));
+            myAnim.SetFloat("Combo", (int)(Combo++ % 3));
             myAnim.SetTrigger("Attack");
         }
     }
