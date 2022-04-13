@@ -108,6 +108,9 @@ ModelImporter:
   - first:
       74: -5644697109399878096
     second: Tiki_one_punch_step3 (1)
+  - first:
+      74: 3122349305200541468
+    second: Tiki_one_punch_step2 (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -804,11 +807,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Tiki_one_punch_step3 (1)
-      takeName: Tiki_one_punch_step3
+      name: Tiki_one_punch_step2 (1)
+      takeName: Tiki_one_punch_step2
       internalID: 0
       firstFrame: 0
-      lastFrame: 70
+      lastFrame: 260
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
