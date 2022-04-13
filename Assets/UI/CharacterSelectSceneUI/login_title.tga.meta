@@ -5,12 +5,6 @@ TextureImporter:
   - first:
       213: -9014270703759190325
     second: OptionIcon
-  - first:
-      213: -7143350737838849576
-    second: option_bg
-  - first:
-      213: -3511996535513146776
-    second: option_top
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -120,7 +114,7 @@ TextureImporter:
         width: 45
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,48 +122,6 @@ TextureImporter:
       bones: []
       spriteID: bc61939fd80e6e280800000000000000
       internalID: -9014270703759190325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: option_top
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 120
-        width: 294
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86a165022c1e24fc0800000000000000
-      internalID: -3511996535513146776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: option_bg
-      rect:
-        serializedVersion: 2
-        x: 599
-        y: 271
-        width: 64
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1471dd958bddc90800000000000000
-      internalID: -7143350737838849576
       vertices: []
       indices: 
       edges: []
