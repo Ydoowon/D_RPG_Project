@@ -13,8 +13,7 @@ public class MainManger : MonoBehaviour
     public GameObject Costumepanel;
     public GameObject Shoppanel;
     public GameObject Cashshoppanel;
-    public GameObject Alarmpanel;
-    public GameObject Mailpanel;
+  
 
     public void OnclickTeamMangement() //팀관리 버튼 코드
     {
@@ -33,14 +32,6 @@ public class MainManger : MonoBehaviour
     public void CloseOption() //옵션 닫기버튼 코드
     {
         Optionpanel.SetActive(false);
-    }
-    public void OnclickAlarm()// 알람 버튼 코드 
-    {
-       Alarmpanel.SetActive(true);
-    }
-    public void CloseAlarm() //알람 닫기버튼 코드
-    {
-        Alarmpanel.SetActive(false);
     }
     public void GodengeonScene() //메인화면 배틀 신전환 코드
     {
@@ -86,34 +77,24 @@ public class MainManger : MonoBehaviour
         Costumepanel.SetActive(false);
         Mainpanel.SetActive(true);
     }
-    public void OnclickShop() //상점 버튼 코드
+    public void OnclickShop() //코스튬 버튼 코드
     {
         Mainpanel.SetActive(false);
         Shoppanel.SetActive(true);
     }
-    public void BackMainShop() //상점 왼쪽상단 뒤로가기 코드
+    public void BackMainShop() //코스튬 왼쪽상단 뒤로가기 코드
     {
         Shoppanel.SetActive(false);
         Mainpanel.SetActive(true);
     }
-    public void OnclickCashshop() //캐시상점 버튼 코드
+    public void OnclickCashshop() //코스튬 버튼 코드
     {
         Mainpanel.SetActive(false);
         Cashshoppanel.SetActive(true);
     }
-    public void BackMainCashshop() //캐시상점 왼쪽상단 뒤로가기 코드
+    public void BackMainCashshop() //코스튬 왼쪽상단 뒤로가기 코드
     {
        Cashshoppanel.SetActive(false);
-        Mainpanel.SetActive(true);
-    }
-    public void OnclickMail() //메일 버튼 코드
-    {
-        Mainpanel.SetActive(false);
-       Mailpanel.SetActive(true);
-    }
-    public void BackMainMail() //메일 왼쪽상단 뒤로가기 코드
-    {
-        Mailpanel.SetActive(false);
         Mainpanel.SetActive(true);
     }
 }
