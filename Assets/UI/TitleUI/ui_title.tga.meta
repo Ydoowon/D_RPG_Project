@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 8600f5c2e916fb24f934f57b60758cf9
+guid: 6e84d5e4a41f8324f8cc9bec77bd7808
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9014270703759190325
-    second: OptionIcon
+      213: -8134486116565685396
+    second: ui_title_0
   - first:
-      213: -7143350737838849576
-    second: option_bg
-  - first:
-      213: -3511996535513146776
-    second: option_top
+      213: -6516207844737349948
+    second: ui_title_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -112,64 +109,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OptionIcon
+      name: ui_title_0
       rect:
         serializedVersion: 2
-        x: 881
-        y: 273
-        width: 45
-        height: 48
+        x: 0
+        y: 154
+        width: 291
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc61939fd80e6e280800000000000000
-      internalID: -9014270703759190325
+      spriteID: c6b61cfa9ff7c1f80800000000000000
+      internalID: -8134486116565685396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: option_top
+      name: ui_title_1
       rect:
         serializedVersion: 2
-        x: 514
-        y: 120
-        width: 294
-        height: 83
+        x: 0
+        y: 0
+        width: 512
+        height: 147
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86a165022c1e24fc0800000000000000
-      internalID: -3511996535513146776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: option_bg
-      rect:
-        serializedVersion: 2
-        x: 599
-        y: 271
-        width: 64
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 20, z: 20, w: 20}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1471dd958bddc90800000000000000
-      internalID: -7143350737838849576
+      spriteID: 4c601d35d77c195a0800000000000000
+      internalID: -6516207844737349948
       vertices: []
       indices: 
       edges: []
@@ -177,7 +153,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 67b17db63a854d744a70063c3bb0c485
     internalID: 0
     vertices: []
     indices: 
