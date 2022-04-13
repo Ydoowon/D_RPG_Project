@@ -38,11 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
->>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -127,7 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
 --- !u!1 &47287258
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,8 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47287258}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes
 --- !u!1001 &99581955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,11 +339,7 @@ PrefabInstance:
     - target: {fileID: 2857172705354131492, guid: f50afbde7d0f61645859ba3672d33caf, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: c4adffeb7a12d044fa6992a01463c810, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: e6cb23fa234c3ac4fa819a9be82ced4e, type: 2}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f50afbde7d0f61645859ba3672d33caf, type: 3}
 --- !u!4 &99581956 stripped
@@ -358,7 +347,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f50afbde7d0f61645859ba3672d33caf, type: 3}
   m_PrefabInstance: {fileID: 99581955}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
 --- !u!1 &204710997
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +422,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204710997}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes
 --- !u!1001 &302429655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -506,11 +492,7 @@ PrefabInstance:
     - target: {fileID: 1479997486700916438, guid: bb48a70dbe946164d8af4f72b1b6ceb5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: 171013d61a5fb984993d834eceee5815, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: cc927df287e76b0438cfb3b4a6c4cbd7, type: 2}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb48a70dbe946164d8af4f72b1b6ceb5, type: 3}
 --- !u!4 &302429656 stripped
@@ -611,7 +593,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &419304474
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +716,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419304474}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes
 --- !u!1 &565719112
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +792,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565719112}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0.40338668, y: -0.038955186, z: -0.016853953, w: 0.9140447}
   m_LocalPosition: {x: 400.421, y: 226.614, z: -1.575}
   m_LocalScale: {x: 1.4398563, y: 1.4398564, z: 1.4398562}
@@ -896,15 +874,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714750765}
   m_CullTransparentMesh: 1
-=======
-  m_LocalRotation: {x: 0.3420201, y: -0, z: -0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 3, z: -5.898}
-  m_LocalScale: {x: 1.7235187, y: 1.7235186, z: 1.7235186}
-  m_Children: []
-  m_Father: {fileID: 868563661}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &720601726
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,13 +898,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720601726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 401, y: 225.5, z: 0}
   m_LocalScale: {x: 0.41770834, y: 0.41770834, z: 0.8354167}
-=======
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
->>>>>>> Stashed changes
   m_Children:
   - {fileID: 2142630094}
   - {fileID: 302429656}
@@ -944,13 +908,8 @@ Transform:
   - {fileID: 2128605932}
   - {fileID: 1196057927}
   - {fileID: 2095141146}
-<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_RootOrder: 2
-=======
-  m_Father: {fileID: 868563661}
-  m_RootOrder: 1
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &868563657
 GameObject:
@@ -1028,11 +987,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-<<<<<<< Updated upstream
   m_AdditionalShaderChannelsFlag: 25
-=======
-  m_AdditionalShaderChannelsFlag: 0
->>>>>>> Stashed changes
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1047,24 +1002,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-<<<<<<< Updated upstream
   - {fileID: 419304475}
   - {fileID: 1801673556}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-=======
-  - {fileID: 565719115}
-  - {fileID: 720601727}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< Updated upstream
 --- !u!1 &990597973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,8 +1221,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994782697}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes
 --- !u!1001 &1196057926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1374,11 +1319,7 @@ PrefabInstance:
     - target: {fileID: -340268946553852894, guid: 489d037f7197fcf4b9460441bdbd3b1c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: ea2c4b0fcad382f49921225749a8eaee, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: 4b491185b62ea6646b42415fe8dbc245, type: 2}
->>>>>>> Stashed changes
     - target: {fileID: 919132149155446097, guid: 489d037f7197fcf4b9460441bdbd3b1c, type: 3}
       propertyPath: m_Name
       value: Worldmap_Volcano
@@ -1456,11 +1397,7 @@ PrefabInstance:
     - target: {fileID: -5719185479856947122, guid: 92e53c2c2f8cfd7468e6a22de04e886e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: 6075f57b9baf84c49a60456f188e665a, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: aa336a24fb483b34f963f5436d9e2426, type: 2}
->>>>>>> Stashed changes
     - target: {fileID: -2679863358503882282, guid: 92e53c2c2f8cfd7468e6a22de04e886e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.138
@@ -1512,7 +1449,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 92e53c2c2f8cfd7468e6a22de04e886e, type: 3}
   m_PrefabInstance: {fileID: 1649284374}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1801673555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,8 +1572,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801673555}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes
 --- !u!1 &1834852472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,7 +1636,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071580172
@@ -1780,10 +1713,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071580172}
   m_CullTransparentMesh: 1
-=======
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &2095141145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1842,11 +1771,7 @@ PrefabInstance:
     - target: {fileID: 4158807969720652364, guid: c641462c6e9562c4fa54352906d3c6cb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: 290f0525a562fdc4f8d77f417d900bc9, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: 7f75ad6ac61da5243bec1b17f5e43049, type: 2}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c641462c6e9562c4fa54352906d3c6cb, type: 3}
 --- !u!4 &2095141146 stripped
@@ -2026,11 +1951,7 @@ PrefabInstance:
     - target: {fileID: 938429611314306066, guid: e2954398325c09a48b65282fc3e81e27, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-<<<<<<< Updated upstream
       objectReference: {fileID: 2100000, guid: b64b306c4ed286740b570a924098720a, type: 2}
-=======
-      objectReference: {fileID: 2100000, guid: 20cb6bf1cbc83904da33c06995c906f9, type: 2}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2954398325c09a48b65282fc3e81e27, type: 3}
 --- !u!4 &2142630094 stripped
