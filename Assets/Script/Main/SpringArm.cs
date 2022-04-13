@@ -9,39 +9,39 @@ public class SpringArm : MonoBehaviour
     public Vector2 HorizontalRotRange;
     public Vector2 VerticalRotRange;
     public float SmoothRotSpeed = 5.0f;
-
+    public CharacterSpin characterspin;
+    
 
     void Start()
     {
-        Rot = this.transform.rotation.eulerAngles;
-
-     
+        Rot = this.transform.localRotation.eulerAngles;
+        //characterspin = GetComponent<CharacterSpin>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
+        if (!characterspin.Is_Character_DragON)
+        { 
         if (Input.GetMouseButton(0))
         {
-     
-
             float X = Input.GetAxis("Mouse X");
             float Y = Input.GetAxis("Mouse Y");
             Rot.y += X * RotSpeed;
             Rot.x += Y * RotSpeed;
 
-            //if (Rot.y < 0) Rot.y += 180.0f;
-            // else Rot.y -= 180.0f;
-            //Rot.y = Mathf.Clamp(Rot.y, HorizontalRotRange.x, HorizontalRotRange.y);
+           
+            Rot.y = Mathf.Clamp(Rot.y, HorizontalRotRange.x, HorizontalRotRange.y);
             Rot.x = Mathf.Clamp(Rot.x, VerticalRotRange.x, VerticalRotRange.y);
 
             
-            this.transform.rotation = Quaternion.Euler(Rot);
+          
         }
 
-        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.Euler(Rot), Time.deltaTime * SmoothRotSpeed);
-
+        this.transform.localRotation = Quaternion.Slerp(this.transform.localRotation, Quaternion.Euler(Rot), Time.deltaTime * SmoothRotSpeed);
+        }
 
     }
 }
