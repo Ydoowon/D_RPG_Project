@@ -13,7 +13,7 @@ TextureImporter:
     second: Back_icon
   - first:
       213: 862117152406969749
-    second: ui_btn_01_9
+    second: ienventoryselect
   - first:
       213: 6069028198243429003
     second: ui_btn_01_10
@@ -347,6 +347,27 @@ TextureImporter:
       bones: []
       spriteID: 6a7c8de02024ab670800000000000000
       internalID: 8555223018750134182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ienventoryselect
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 765
+        width: 116
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d1dff7bfad6fb00800000000000000
+      internalID: 862117152406969749
       vertices: []
       indices: 
       edges: []
