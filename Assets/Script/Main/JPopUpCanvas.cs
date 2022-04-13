@@ -16,6 +16,8 @@ public class JPopUpCanvas : MonoBehaviour
 
     AudioSource audioSource; // 효과음 재생할 오디오클립
 
+    
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -46,5 +48,5 @@ public class JPopUpCanvas : MonoBehaviour
         SceneManager.LoadScene("SelecteDungeon");
     }
 
-    
+
 }
