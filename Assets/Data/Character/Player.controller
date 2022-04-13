@@ -536,7 +536,7 @@ BlendTree:
   m_Name: BasicAttack
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 1752554877524766628, guid: 0eebd08cd6c03244eaab91c7679a060a, type: 3}
+    m_Motion: {fileID: -5644697109399878096, guid: 0eebd08cd6c03244eaab91c7679a060a, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -552,7 +552,7 @@ BlendTree:
     m_DirectBlendParameter: x
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 8402835408723624813, guid: 0eebd08cd6c03244eaab91c7679a060a, type: 3}
+    m_Motion: {fileID: -5644697109399878096, guid: 0eebd08cd6c03244eaab91c7679a060a, type: 3}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
