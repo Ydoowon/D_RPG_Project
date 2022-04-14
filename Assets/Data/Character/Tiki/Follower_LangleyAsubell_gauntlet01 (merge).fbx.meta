@@ -107,10 +107,22 @@ ModelImporter:
     second: Tiki_one_punch_step1 (1)
   - first:
       74: -5644697109399878096
-    second: Tiki_one_punch_step3 (1)
+    second: Tiki_one_punch_step3 (2)
   - first:
       74: 3122349305200541468
     second: Tiki_one_punch_step2 (1)
+  - first:
+      74: 1543622655826560098
+    second: Tiki_attack (1)
+  - first:
+      74: -5644697109399878096
+    second: Tiki_one_punch_step3 (2)
+  - first:
+      74: -5644697109399878096
+    second: Tiki_one_punch_step3 (1)
+  - first:
+      74: -2793536355171499202
+    second: Tiki_one_punch_step3 (2)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -318,7 +330,7 @@ ModelImporter:
       takeName: Tiki_one_punch_step3
       internalID: 0
       firstFrame: 0
-      lastFrame: 260
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -327,8 +339,8 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -604,8 +616,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Tiki_one_punch_step2
-      takeName: Tiki_one_punch_step2
+      name: Tiki_attack (1)
+      takeName: Tiki_attack
       internalID: 0
       firstFrame: 0
       lastFrame: 260
@@ -617,10 +629,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -666,7 +678,7 @@ ModelImporter:
       takeName: Tiki_one_punch_step1
       internalID: 0
       firstFrame: 0
-      lastFrame: 260
+      lastFrame: 50
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -675,10 +687,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -811,7 +823,7 @@ ModelImporter:
       takeName: Tiki_one_punch_step2
       internalID: 0
       firstFrame: 0
-      lastFrame: 260
+      lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1073,6 +1085,35 @@ ModelImporter:
       internalID: 0
       firstFrame: 0
       lastFrame: 340
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiki_one_punch_step3 (2)
+      takeName: Tiki_one_punch_step3
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 260
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

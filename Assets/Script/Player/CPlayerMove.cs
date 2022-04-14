@@ -18,7 +18,6 @@ public class CPlayerMove : cCharacter
     void Update()
     {
         JoystickMove();
-
     }
 
     private void LateUpdate()
@@ -56,6 +55,14 @@ public class CPlayerMove : cCharacter
             Quaternion dirQuat = Quaternion.LookRotation(moveVec); // 회전해야하는 값을 저장
             Quaternion moveQuat = Quaternion.Slerp(myRigid.rotation, dirQuat, SmoothRotSpeed); // 현재 회전값과 바뀔 회전값을 보간
             myRigid.MoveRotation(moveQuat);
+        }
+    }
+
+    public void Roll()
+    {
+        if (!myAnim.GetBool("IsDoing")) // 스킬이나 공격 구르기 중에 구르기x
+        {
+            myAnim.SetTrigger("Roll");
         }
     }
 }
