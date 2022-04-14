@@ -22,11 +22,10 @@ public class SpringArm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (!characterspin.Is_Character_DragON)
+
+        if (!characterspin.Is_Character_DragON && Input.GetMouseButton(0)) 
         { 
-        if (Input.GetMouseButton(0))
-        {
+        
             float X = Input.GetAxis("Mouse X");
             float Y = Input.GetAxis("Mouse Y");
             Rot.y += X * RotSpeed;
@@ -41,7 +40,7 @@ public class SpringArm : MonoBehaviour
         }
 
         this.transform.localRotation = Quaternion.Slerp(this.transform.localRotation, Quaternion.Euler(Rot), Time.deltaTime * SmoothRotSpeed);
-        }
+        
 
     }
 }
