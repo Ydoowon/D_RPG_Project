@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class cMonster : cCharacteristic
 {
@@ -10,6 +11,7 @@ public class cMonster : cCharacteristic
     }
 
     public STATE myState = STATE.NONE;
+    public Transform curMonster;
 
     void Start()
     {
@@ -49,6 +51,19 @@ public class cMonster : cCharacteristic
                 break;
             case STATE.DEAD:
                 break;
+        }
+    }
+
+    void MonsterMove()
+    {
+
+    }
+
+    IEnumerator Moving(Vector3 pos)
+    {
+        while (true)
+        {
+            yield return null;
         }
     }
 }
