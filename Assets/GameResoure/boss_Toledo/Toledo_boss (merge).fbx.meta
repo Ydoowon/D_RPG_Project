@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: dbb2e0f63bd1f154d85886f327ed7bd7
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -6201993933442226499
+    second: ToledoBoss_Whirlwind_compress_none
+  - first:
+      74: 2464232448134744319
+    second: ToledoBoss_Summon_On
+  - first:
+      74: 5366588896194055855
+    second: ToledoBoss_Stand_compress_none
+  - first:
+      74: -5193226940252127616
+    second: ToledoBoss_Restoring_Fail_compress_none
+  - first:
+      74: 8724747316354396683
+    second: ToledoBoss_PowerSmash_compress_none
+  - first:
+      74: -5753480046829488198
+    second: ToledoBoss_PowerSlash_Start_compress_none
+  - first:
+      74: -6889058630722790539
+    second: ToledoBoss_PowerSlash_End_compress_none
+  - first:
+      74: 1127699466563166221
+    second: ToledoBoss_NormalAttack02_compress_none
+  - first:
+      74: 742060254848337582
+    second: ToledoBoss_NormalAttack01_Start_compress_none
+  - first:
+      74: 5216040083352470676
+    second: ToledoBoss_NormalAttack01_End_compress_none
+  - first:
+      74: 5649346963607181238
+    second: ToledoBoss_MoveRight_Start_compress_none
+  - first:
+      74: 3276020208305130587
+    second: ToledoBoss_MoveRight_End_compress_none
+  - first:
+      74: 2956113534804277233
+    second: ToledoBoss_MoveRight_compress_none
+  - first:
+      74: 4970840494999442580
+    second: ToledoBoss_MoveLeft_Start_compress_none
+  - first:
+      74: -2739726926867012050
+    second: ToledoBoss_MoveLeft_End_compress_none
+  - first:
+      74: 119463318745550229
+    second: ToledoBoss_MoveLeft_compress_none
+  - first:
+      74: 781153743014035158
+    second: ToledoBoss_MoveFront_Start_compress_none
+  - first:
+      74: 6603068973612386585
+    second: ToledoBoss_MoveFront_End_compress_none
+  - first:
+      74: 7520265682216311911
+    second: ToledoBoss_MoveFront_compress_none
+  - first:
+      74: -623719495068175290
+    second: ToledoBoss_MoveBack_Start_compress_none
+  - first:
+      74: -4696762222980994813
+    second: ToledoBoss_MoveBack_compress_none
+  - first:
+      74: 5958340565003197237
+    second: Toledo_boss_SwiftStrike_start_compress_none
+  - first:
+      74: 5809946529960325233
+    second: Toledo_boss_SwiftStrike_compress_none
+  - first:
+      74: -1457722784393725155
+    second: Toledo_boss_short_scene02
+  - first:
+      74: 342667268188625030
+    second: Toledo_boss_Rampage_Stand_compress_none
+  - first:
+      74: -172885304240207904
+    second: Toledo_boss_Rampage_Spinattack_Start_compress_none
+  - first:
+      74: -4678434921925004449
+    second: Toledo_boss_Rampage_Spinattack_End_compress_none
+  - first:
+      74: -1207586149699730818
+    second: Toledo_boss_Rampage_Spinattack_compress_none
+  - first:
+      74: -7108431065259261878
+    second: Toledo_boss_Normal_Attack03_compress_none
+  - first:
+      74: -5123191179307641126
+    second: Toledo_boss_Normal_Attack02_compress_none
+  - first:
+      74: 368608256442864605
+    second: Toledo_boss_Normal_Attack01_compress_none
+  - first:
+      74: 4390685387722354098
+    second: Toledo_boss_Hold_Hit_compress_none
+  - first:
+      74: 2351750588852337687
+    second: Toledo_boss_Hold_compress_none
+  - first:
+      74: 3161144234721702989
+    second: Toledo_boss_Hit_compress_none
+  - first:
+      74: -4787995001334344947
+    second: Toledo_boss_Hit_Air_compress_none
+  - first:
+      74: 6103357620851679357
+    second: Toledo_boss_Die_loop_compress_none
+  - first:
+      74: -4214583158942587113
+    second: Toledo_boss_Die_compress_none
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
