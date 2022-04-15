@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -8634784907539146598
     second: pause_bg
+  - first:
+      213: -5509799507236107673
+    second: optiontop
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -186,7 +189,7 @@ TextureImporter:
         width: 368
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: a98993a20e41b2880800000000000000
       internalID: -8634784907539146598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: optiontop
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 278
+        width: 69
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 3, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ac1935a824983b0800000000000000
+      internalID: -5509799507236107673
       vertices: []
       indices: 
       edges: []
