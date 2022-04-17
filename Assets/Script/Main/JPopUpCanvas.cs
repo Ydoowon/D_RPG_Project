@@ -14,9 +14,11 @@ public class JPopUpCanvas : MonoBehaviour
     [SerializeField]
     private AudioClip DunGeon_Click; // 던전 선택 클릭했을때 재생할 효과음
 
+    public bool IsUIopen = false;
+
     AudioSource audioSource; // 효과음 재생할 오디오클립
 
-    
+
 
     void Awake()
     {
@@ -28,12 +30,14 @@ public class JPopUpCanvas : MonoBehaviour
     {
         audioSource.PlayOneShot(Ui_Click);
         UI_Canvas.SetActive(true);
+        IsUIopen = true;
     }
 
     public void ExitPopUp() // 미구현 팝업 확인창 누를때 함수
     {
         audioSource.PlayOneShot(Ui_Click);
         UI_Canvas.SetActive(false);
+        IsUIopen = false;
     }
 
     public void EnterDunGeon() // 던전선택 아이콘 눌렀을때 함수
@@ -42,11 +46,25 @@ public class JPopUpCanvas : MonoBehaviour
         StartCoroutine(Delay(1)); // 효과음 재생을 위한 1초 딜레이 코루틴 (안하면 효과음 소리가 안나고 씬이동함)
     }
 
+    public void Ui_isOpen() // ui가 열려있는지
+    {
+        IsUIopen = true;
+    }
+
+    public void Ui_isClose() // ui가 닫혀있는지 
+    {
+        IsUIopen = false;
+    }
+
+
     IEnumerator Delay(float t)
     {
         yield return new WaitForSeconds(t);
         SceneManager.LoadScene("SelecteDungeon");
     }
+
+    
+        
 
 
 }
