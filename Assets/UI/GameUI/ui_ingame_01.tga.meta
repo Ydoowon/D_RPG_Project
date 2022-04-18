@@ -17,6 +17,18 @@ TextureImporter:
   - first:
       213: -5509799507236107673
     second: pausebg
+  - first:
+      213: -1079790119083582424
+    second: pauseicon2
+  - first:
+      213: 5086108076325667643
+    second: pauseicon1
+  - first:
+      213: -3182412071317581003
+    second: pauseicon3
+  - first:
+      213: -786301839918461232
+    second: pauseicon4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -210,7 +222,7 @@ TextureImporter:
         width: 363
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,6 +230,90 @@ TextureImporter:
       bones: []
       spriteID: 76ac1935a824983b0800000000000000
       internalID: -5509799507236107673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pauseicon2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cdb009b90d301f0800000000000000
+      internalID: -1079790119083582424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pauseicon1
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 476
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3303aa195c759640800000000000000
+      internalID: 5086108076325667643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pauseicon3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 488
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5335330151dc5d3d0800000000000000
+      internalID: -3182412071317581003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pauseicon4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 745
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de8c6184ae7615f0800000000000000
+      internalID: -786301839918461232
       vertices: []
       indices: 
       edges: []
