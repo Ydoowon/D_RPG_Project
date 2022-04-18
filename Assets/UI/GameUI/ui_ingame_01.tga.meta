@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -515398930362135092
-    second: attack_icon
+    second: ui_ingame_01_0
   - first:
       213: 8995538100083443225
-    second: skill_bg
+    second: skillbg
   - first:
       213: 6895886651440446079
-    second: pause_icon
+    second: attack ui
   - first:
       213: -8634784907539146598
-    second: pause_bg
+    second: pause
   - first:
       213: -5509799507236107673
-    second: optiontop
+    second: pausebg
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack_icon
+      name: ui_ingame_01_0
       rect:
         serializedVersion: 2
-        x: 229
-        y: 55
-        width: 135
-        height: 135
+        x: 955
+        y: 284
+        width: 60
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,13 +139,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skill_bg
+      name: skillbg
       rect:
         serializedVersion: 2
-        x: 741
+        x: 742
         y: 0
-        width: 101
-        height: 108
+        width: 102
+        height: 109
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,13 +160,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pause_icon
+      name: attack ui
       rect:
         serializedVersion: 2
-        x: 708
-        y: 253
-        width: 22
-        height: 29
+        x: 224
+        y: 54
+        width: 142
+        height: 135
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,13 +181,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pause_bg
+      name: pause
       rect:
         serializedVersion: 2
-        x: 1
-        y: 427
-        width: 368
-        height: 69
+        x: 708
+        y: 253
+        width: 23
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,16 +202,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: optiontop
+      name: pausebg
       rect:
         serializedVersion: 2
-        x: 948
-        y: 278
-        width: 69
-        height: 34
+        x: 4
+        y: 429
+        width: 363
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 5, y: 0, z: 3, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
