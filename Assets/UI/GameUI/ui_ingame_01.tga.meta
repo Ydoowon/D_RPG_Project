@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -515398930362135092
-    second: attack_icon
+    second: ui_ingame_01_0
   - first:
       213: 8995538100083443225
     second: skill_bg
@@ -118,15 +118,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack_icon
+      name: ui_ingame_01_0
       rect:
         serializedVersion: 2
-        x: 229
-        y: 55
-        width: 135
-        height: 135
+        x: 955
+        y: 284
+        width: 60
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,90 +134,6 @@ TextureImporter:
       bones: []
       spriteID: ccd062e476fe8d8f0800000000000000
       internalID: -515398930362135092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skill_bg
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 0
-        width: 101
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91647fadd3296dc70800000000000000
-      internalID: 8995538100083443225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pause_icon
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 253
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7a377e9f5c13bf50800000000000000
-      internalID: 6895886651440446079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pause_bg
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 427
-        width: 368
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a98993a20e41b2880800000000000000
-      internalID: -8634784907539146598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: optiontop
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 278
-        width: 69
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 5, y: 0, z: 3, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76ac1935a824983b0800000000000000
-      internalID: -5509799507236107673
       vertices: []
       indices: 
       edges: []
