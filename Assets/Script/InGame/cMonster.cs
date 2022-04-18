@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public struct ROTDATA
+{
+    // 회전 데이터
+    public float angle;
+    public float rotDir;
+}
+
 public class cMonster : cCharacteristic, BattleSystem
 {
     public enum STATE
@@ -13,6 +20,7 @@ public class cMonster : cCharacteristic, BattleSystem
     public STATE myState = STATE.CREAT;
 
     public Stats myStats;
+    public ROTDATA myRotData;
 
     Coroutine moveRoutine = null;
     Coroutine rotRoutine = null;
@@ -87,27 +95,21 @@ public class cMonster : cCharacteristic, BattleSystem
     }
 
     void DetectMove()
-    {
-        // 따라갈 타겟설정
-        Vector3 myTarget = myDetection.Target.transform.position;
-
-        dir = myTarget - this.transform.position; // 이동 방향
-        dist = dir.magnitude; // 목표지점까지의 거리
-        dir.Normalize();
-
-        // 회전
-        if (rotRoutine != null)
-        {
-            StopCoroutine(rotRoutine);
-        }
-        rotRoutine = StartCoroutine(Rotate());
-
+    {               
         // 이동 - 대상을 따라다니도록
         if (moveRoutine != null)
         {
             StopCoroutine(moveRoutine);
         }
         moveRoutine = StartCoroutine(Attacking());
+
+        // 회전
+        if (rotRoutine != null)
+        {
+            StopCoroutine(rotRoutine);
+        }
+        rotRoutine = StartCoroutine(LookingTarget());
+
     }
 
     IEnumerator Attacking()
@@ -116,6 +118,11 @@ public class cMonster : cCharacteristic, BattleSystem
 
         while (true)
         {
+            // 매번 타겟의 위치를 갱신 -> 플레이어의 움직임을 받아옴 
+            dir = myDetection.Target.transform.position - this.transform.position; // 이동 방향
+            dist = dir.magnitude; // 목표지점까지의 거리
+            dir.Normalize();
+
             if (dist > ATK_Range) // 공격범위 밖에 있을 경우 따라감
             {
                 myAnim.SetBool("IsWalk", true); // idle -> walk_front 
@@ -125,7 +132,6 @@ public class cMonster : cCharacteristic, BattleSystem
                 delta = delta > dist ? dist : delta; // 이동 거리가 남은 거리보다 클 경우 남은 거리 만큼만 이동
 
                 this.transform.Translate(dir * delta);
-                dist -= delta;
             }
             else // 공격범위 내에 있을 경우 공격
             {
@@ -143,6 +149,30 @@ public class cMonster : cCharacteristic, BattleSystem
                     }
                 }
             }
+            yield return null;
+        }
+    }
+
+    IEnumerator LookingTarget()
+    {
+        while (true)
+        {
+            CalculateAngle(); // 각도 계산 -> 매번 해주어야 함
+
+            if (Vector3.Dot(myAnim.transform.right, dir) < 0.0f)
+            {
+                myRotData.rotDir = -1.0f; // 왼쪽방향
+            }
+
+            if (!Mathf.Approximately(myRotData.angle, 0.0f))
+            {
+                float delta = RotSpeed * Time.deltaTime;
+
+                delta = delta > myRotData.angle ? myRotData.angle : delta;
+
+                myAnim.transform.Rotate(Vector3.up * delta * myRotData.rotDir);
+            }
+
             yield return null;
         }
     }
@@ -208,27 +238,31 @@ public class cMonster : cCharacteristic, BattleSystem
 
     IEnumerator Rotate()
     {
-        float rad = Mathf.Acos(Vector3.Dot(myAnim.transform.forward, dir)); // 이동할 지점까지의 각도를 구함
-        float angle = 180 * (rad / Mathf.PI); // degree 각도로 바꿈
-        float rotDir = 1.0f; // 회전 방향값 => 오른쪽
+        CalculateAngle(); // 각도 계산
 
-        if (Vector3.Dot(myAnim.transform.right, dir) < 0.0f)
-        {
-            rotDir = -1.0f; // 왼쪽방향
-        }
-
-        while (!Mathf.Approximately(angle, 0.0f))
+        while (!Mathf.Approximately(myRotData.angle, 0.0f))
         {
             float delta = RotSpeed * Time.deltaTime;
 
-            delta = delta > angle ? angle : delta;
+            delta = delta > myRotData.angle ? myRotData.angle : delta;
 
-            myAnim.transform.Rotate(Vector3.up * delta * rotDir);
-            angle -= delta;
+            myAnim.transform.Rotate(Vector3.up * delta * myRotData.rotDir);
+            myRotData.angle -= delta;
 
             yield return null;
         }
     }
 
-    
+    void CalculateAngle()
+    {
+        // 각도 계산
+        float rad = Mathf.Acos(Vector3.Dot(myAnim.transform.forward, dir)); // 이동할 지점까지의 각도를 구함
+        myRotData.angle = 180 * (rad / Mathf.PI); // degree 각도로 바꿈
+        myRotData.rotDir = 1.0f; // 회전 방향값 => 오른쪽
+
+        if (Vector3.Dot(myAnim.transform.right, dir) < 0.0f)
+        {
+            myRotData.rotDir = -1.0f; // 왼쪽방향
+        }
+    }
 }
