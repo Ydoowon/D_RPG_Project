@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class cMonster : cCharacteristic
+public class cMonster : cCharacteristic, BattleSystem
 {
     public enum STATE
     {
@@ -11,6 +11,8 @@ public class cMonster : cCharacteristic
     }
 
     public STATE myState = STATE.CREAT;
+
+    public Stats myStats;
 
     Coroutine moveRoutine = null;
     Coroutine rotRoutine = null;
@@ -23,6 +25,14 @@ public class cMonster : cCharacteristic
     public float MoveSpeed = 3.0f; // 몬스터 이동 속도
     public float RotSpeed = 360.0f; // 몬스터 회전 속도
     public float RoamingWaitTime = 3.0f; // 몬스터 로밍간 대기시간
+
+    public float ATK_Range; // 공격범위
+    public float ATK_WaitingTime; // 공격 대기시간
+
+    public void OnDamage(float damage)
+    {
+
+    }
 
     void Start()
     {
@@ -48,6 +58,7 @@ public class cMonster : cCharacteristic
                 MonsterMove();
                 break;
             case STATE.BATTLE:
+                DetectMove();
                 break;
             case STATE.DEAD:
                 break;
@@ -69,8 +80,78 @@ public class cMonster : cCharacteristic
         }
     }
 
+    public void OnBattle()
+    {
+        StopAllCoroutines();
+        ChangeState(STATE.BATTLE);
+    }
+
+    void DetectMove()
+    {
+        // 따라갈 타겟설정
+        Vector3 myTarget = myDetection.Target.transform.position;
+
+        dir = myTarget - this.transform.position; // 이동 방향
+        dist = dir.magnitude; // 목표지점까지의 거리
+        dir.Normalize();
+
+        // 회전
+        if (rotRoutine != null)
+        {
+            StopCoroutine(rotRoutine);
+        }
+        rotRoutine = StartCoroutine(Rotate());
+
+        // 이동 - 대상을 따라다니도록
+        if (moveRoutine != null)
+        {
+            StopCoroutine(moveRoutine);
+        }
+        moveRoutine = StartCoroutine(Attacking());
+    }
+
+    IEnumerator Attacking()
+    {
+        float AttackTime = ATK_WaitingTime; // 첫 공격시 딜레이 없이 바로 공격
+
+        while (true)
+        {
+            if (dist > ATK_Range) // 공격범위 밖에 있을 경우 따라감
+            {
+                myAnim.SetBool("IsWalk", true); // idle -> walk_front 
+
+                float delta = MoveSpeed * Time.deltaTime; // 이동 거리
+
+                delta = delta > dist ? dist : delta; // 이동 거리가 남은 거리보다 클 경우 남은 거리 만큼만 이동
+
+                this.transform.Translate(dir * delta);
+                dist -= delta;
+            }
+            else // 공격범위 내에 있을 경우 공격
+            {
+                myAnim.SetBool("IsWalk", false); // walk_front -> idle
+
+                if (myAnim.GetBool("IsAttack") == false)
+                {                    
+                    AttackTime += Time.deltaTime;
+
+                    if(AttackTime >= ATK_WaitingTime)
+                    {
+                        // 공격
+                        myAnim.SetTrigger("Attack");
+                        AttackTime = 0.0f;
+                    }
+                }
+            }
+            yield return null;
+        }
+    }
+
     void MonsterMove()
     {
+        // 이동방향 설정
+        DirectionSetting(); 
+
         // 회전
         if (rotRoutine != null)
         {
@@ -84,6 +165,18 @@ public class cMonster : cCharacteristic
             StopCoroutine(moveRoutine);
         }
         moveRoutine = StartCoroutine(Roaming());
+
+    }   
+
+    void DirectionSetting()
+    {
+        // 이동할 지점을 랜덤으로 설정
+        roamingArea.x = startPos.x + Random.Range(-5.0f, 5.0f);
+        roamingArea.z = startPos.z + Random.Range(-5.0f, 5.0f);
+
+        dir = roamingArea - this.transform.position; // 이동 방향
+        dist = dir.magnitude; // 목표지점까지의 거리
+        dir.Normalize();
     }
 
     IEnumerator RoamingWait(float t, UnityAction done)
@@ -95,7 +188,6 @@ public class cMonster : cCharacteristic
 
     IEnumerator Roaming()
     {
-        DirectionSetting(); // 이동방향 설정
         myAnim.SetBool("IsWalk", true); // idle -> walk_front                
 
         while (!Mathf.Approximately(dist, 0.0f))
@@ -111,12 +203,11 @@ public class cMonster : cCharacteristic
         }
 
         StartCoroutine(RoamingWait(RoamingWaitTime, () => MonsterMove())); // 다시 다른곳으로 로밍시작
+        
     }
 
     IEnumerator Rotate()
     {
-        DirectionSetting(); // 이동방향 설정
-
         float rad = Mathf.Acos(Vector3.Dot(myAnim.transform.forward, dir)); // 이동할 지점까지의 각도를 구함
         float angle = 180 * (rad / Mathf.PI); // degree 각도로 바꿈
         float rotDir = 1.0f; // 회전 방향값 => 오른쪽
@@ -139,14 +230,5 @@ public class cMonster : cCharacteristic
         }
     }
 
-    void DirectionSetting()
-    {
-        // 이동할 지점을 랜덩으로 설정
-        roamingArea.x = startPos.x + Random.Range(-5.0f, 5.0f);
-        roamingArea.z = startPos.z + Random.Range(-5.0f, 5.0f);
-
-        dir = roamingArea - this.transform.position; // 이동 방향
-        dist = dir.magnitude; // 목표지점까지의 거리
-        dir.Normalize();
-    }
+    
 }
