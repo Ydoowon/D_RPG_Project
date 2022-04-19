@@ -4,38 +4,83 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 9099447654422511406
-    second: Tiki_down_hit
+      74: 8571162792559181443
+    second: Tiki_run_end
   - first:
-      74: -4112119371706951779
-    second: Tiki_Skill_Ultimate2_end
+      74: 8402835408723624813
+    second: Tiki_one_punch_step3
   - first:
-      74: 4500290113346256923
-    second: Tiki_Skill_Ultimate2
+      74: -8283957045694566419
+    second: Tiki_hit_big_end
   - first:
-      74: -3494751771601937882
-    second: Tiki_down
+      74: -4624150694216212686
+    second: Tiki_down_loop
   - first:
-      74: 4072024313043860777
-    second: Tiki_die
-  - first:
-      74: 2769755580772105589
-    second: Tiki_stun
-  - first:
-      74: 1972651739177663219
-    second: Tiki_Skill_Ultimate2_start
-  - first:
-      74: 5451044099963474542
-    second: Tiki_one_punch_step2
+      74: 7760191934663650260
+    second: Tiki_one_punch
   - first:
       74: 5739987059962718102
     second: Tiki_lobby_victory_compress_none
   - first:
-      74: -4600597783609022561
-    second: Tiki_hold_hit
+      74: -6922518849997834462
+    second: Tiki_hit_small
   - first:
-      74: 8402835408723624813
-    second: Tiki_one_punch_step3
+      74: 5286233050083995092
+    second: Tiki_victory_pose
+  - first:
+      74: 1972651739177663219
+    second: Tiki_Skill_Ultimate2_start
+  - first:
+      74: 4072024313043860777
+    second: Tiki_die
+  - first:
+      74: 3148920590709967953
+    second: Tiki_charge_fury_loop
+  - first:
+      74: 9099447654422511406
+    second: Tiki_down_hit
+  - first:
+      74: 233432502605551359
+    second: Tiki_stand_compress_none
+  - first:
+      74: 4556015798400769883
+    second: Tiki_run_start
+  - first:
+      74: 4650493065887507560
+    second: Tiki_emotion_congratulation
+  - first:
+      74: -6130561329548042758
+    second: Tiki_charge_fury_start
+  - first:
+      74: -7662346062409272228
+    second: Tiki_hit_big_start
+  - first:
+      74: 4908347645554026440
+    second: Tiki_Skill_Ultimate2_loop
+  - first:
+      74: -4112119371706951779
+    second: Tiki_Skill_Ultimate2_end
+  - first:
+      74: 5367337607469045881
+    second: Tiki_hold_loop
+  - first:
+      74: 5451044099963474542
+    second: Tiki_one_punch_step2
+  - first:
+      74: 3224792359567865451
+    second: Tiki_Switching
+  - first:
+      74: -1068913262936248402
+    second: Tiki_Skill_Ultimate1
+  - first:
+      74: -8502087453709548042
+    second: Tiki_run_front
+  - first:
+      74: 6635746454466569825
+    second: Tiki_lobby_stand_compress_none
+  - first:
+      74: -5886472706982384603
+    second: Tiki_down_stand
   - first:
       74: 8767267427921240013
     second: Tiki_charge_fury_end
@@ -43,71 +88,26 @@ ModelImporter:
       74: -2970757782693490310
     second: Tiki_summon
   - first:
-      74: 233432502605551359
-    second: Tiki_stand_compress_none
-  - first:
-      74: 1752554877524766628
-    second: Tiki_one_punch_step1
-  - first:
-      74: -4624150694216212686
-    second: Tiki_down_loop
-  - first:
-      74: -5886472706982384603
-    second: Tiki_down_stand
-  - first:
-      74: 3224792359567865451
-    second: Tiki_Switching
-  - first:
-      74: -6130561329548042758
-    second: Tiki_charge_fury_start
-  - first:
-      74: -6632594293958644137
-    second: Tiki_attack
-  - first:
-      74: 8571162792559181443
-    second: Tiki_run_end
-  - first:
-      74: -7662346062409272228
-    second: Tiki_hit_big_start
-  - first:
-      74: 5367337607469045881
-    second: Tiki_hold_loop
-  - first:
-      74: 4908347645554026440
-    second: Tiki_Skill_Ultimate2_loop
-  - first:
-      74: -1068913262936248402
-    second: Tiki_Skill_Ultimate1
-  - first:
-      74: 4650493065887507560
-    second: Tiki_emotion_congratulation
-  - first:
-      74: 7760191934663650260
-    second: Tiki_one_punch
-  - first:
-      74: -6922518849997834462
-    second: Tiki_hit_small
-  - first:
-      74: -8283957045694566419
-    second: Tiki_hit_big_end
-  - first:
-      74: 5286233050083995092
-    second: Tiki_victory_pose
-  - first:
-      74: 6635746454466569825
-    second: Tiki_lobby_stand_compress_none
+      74: 4500290113346256923
+    second: Tiki_Skill_Ultimate2
   - first:
       74: -1461929487443278072
     second: Tiki_caught
   - first:
-      74: 3148920590709967953
-    second: Tiki_charge_fury_loop
+      74: -4600597783609022561
+    second: Tiki_hold_hit
   - first:
-      74: -8502087453709548042
-    second: Tiki_run_front
+      74: -6632594293958644137
+    second: Tiki_attack
   - first:
-      74: 4556015798400769883
-    second: Tiki_run_start
+      74: -3494751771601937882
+    second: Tiki_down
+  - first:
+      74: 1752554877524766628
+    second: Tiki_one_punch_step1
+  - first:
+      74: 2769755580772105589
+    second: Tiki_stun
   externalObjects: {}
   materials:
     materialImportMode: 2
