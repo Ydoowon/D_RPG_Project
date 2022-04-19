@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46785975, g: 0.45445418, b: 0.42493245, a: 1}
+  m_IndirectSpecularColor: {r: 1.1713349, g: 0.87429917, b: 0.6024618, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19341,7 +19341,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f4edf23d6c00e49b3da0345d6e2339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI_Canvas: {fileID: 534632584}
+  mainCamera: {fileID: 0}
+  BackGround_Canvas: {fileID: 0}
+  Inventory_Canvas: {fileID: 0}
+  Option_Canvas: {fileID: 0}
+  IsUIopen: 0
+  equip_image: []
+  option_image: []
   Ui_Click: {fileID: 8300000, guid: b3b52ebd1b98d214aa98d88dfba6e925, type: 3}
   DunGeon_Click: {fileID: 8300000, guid: 6d6b99fcc3d0a794b982f6e5d89e33fb, type: 3}
 --- !u!4 &1377299969
@@ -21644,6 +21650,7 @@ MonoBehaviour:
   VerticalRotRange: {x: -37, y: 30}
   SmoothRotSpeed: 5
   characterspin: {fileID: 0}
+  jpopupCanvas: {fileID: 0}
 --- !u!1 &1974759882
 GameObject:
   m_ObjectHideFlags: 0
@@ -23196,6 +23203,10 @@ PrefabInstance:
     - target: {fileID: 6559723926838373724, guid: 622b5e29ccb454843889cd001af11e82, type: 3}
       propertyPath: m_Name
       value: OptionPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559723926838373724, guid: 622b5e29ccb454843889cd001af11e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622b5e29ccb454843889cd001af11e82, type: 3}
