@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cAttackManager : cCharacter
+public class cAttackManager : cCharacteristic
 {
     public int Combo = 0;
     public float ComboLimitTime = 1.5f;

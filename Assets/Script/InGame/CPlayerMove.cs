@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CPlayerMove : cCharacter
+public class CPlayerMove : cCharacteristic
 {
     public FloatingJoystick joystick;
     public Transform myCharacter;
@@ -12,7 +12,7 @@ public class CPlayerMove : cCharacter
     Vector3 moveVec;
 
     public float MoveSpeed = 5.0f;
-    public float SmoothRotSpeed = 1.0f;
+    public float SmoothRotSpeed = 360.0f;
 
     // Update is called once per frame
     void Update()
@@ -40,10 +40,13 @@ public class CPlayerMove : cCharacter
             Vector3 moveDir = lookForward * moveInput.y + lookRight * moveInput.x; // 현재 카메라가 바라보는 방향
 
             // 카메라가 바라보는 방향으로 이동하도록 설정
-            myCharacter.forward = moveDir;
-            moveVec = moveDir * MoveSpeed * Time.deltaTime;
-            //myRigid.MovePosition(myRigid.position + moveVec);
-            this.transform.Translate(moveVec,Space.World);
+            if (moveDir != Vector3.zero)
+            {
+                myCharacter.forward = moveDir;
+                moveVec = moveDir * MoveSpeed * Time.deltaTime;
+                myRigid.MovePosition(myRigid.position + moveVec);
+                this.transform.Translate(moveVec, Space.World);
+            }
         }
 
         // 입력이 없을경우 회전x
