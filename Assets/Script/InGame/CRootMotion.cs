@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CRootMotion : cCharacter
+public class CRootMotion : cCharacteristic
 {
     public Transform myRoot;
     public float MoveSpeed = 1.0f; // 플레이어 이동 속도
