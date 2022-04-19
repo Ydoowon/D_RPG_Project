@@ -46,7 +46,7 @@ TextureImporter:
     second: item_bg
   - first:
       213: -8192343533533295459
-    second: option22
+    second: rewardbtn
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -235,7 +235,7 @@ TextureImporter:
       name: Icon
       rect:
         serializedVersion: 2
-        x: 554
+        x: 553
         y: 664
         width: 73
         height: 75
@@ -416,6 +416,27 @@ TextureImporter:
       bones: []
       spriteID: 0e063a4e76eeb0c70800000000000000
       internalID: 8938500015431835872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rewardbtn
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 225
+        width: 189
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c87cd06f2fe4e80800000000000000
+      internalID: -8192343533533295459
       vertices: []
       indices: 
       edges: []
