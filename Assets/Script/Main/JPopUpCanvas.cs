@@ -115,7 +115,7 @@ public class JPopUpCanvas : MonoBehaviour
         for(int i=0; i<equip_image.Length; i++)
         {
             equip_image[i].enabled = (i == index); // 버튼 onclick()에 함수를 넣고 써놓은 index와 같은 배열 이미지만 켜지고 나머진 다 꺼짐
-
+            audioSource.PlayOneShot(Ui_Click);
 
         }
 
@@ -126,8 +126,8 @@ public class JPopUpCanvas : MonoBehaviour
     {
         for (int i = 0; i < option_image.Length; i++)
         {
-         option_image[i].enabled = (i == index); 
-
+         option_image[i].enabled = (i == index);
+            audioSource.PlayOneShot(Ui_Click);
 
         }
 
