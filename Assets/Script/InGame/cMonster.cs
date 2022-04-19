@@ -118,6 +118,12 @@ public class cMonster : cCharacteristic, BattleSystem
 
         while (true)
         {
+            if (myDetection.Target == null)
+            {
+                ChangeState(STATE.ROAMING);
+                break;
+            }
+
             // 매번 타겟의 위치를 갱신 -> 플레이어의 움직임을 받아옴 
             dir = myDetection.Target.transform.position - this.transform.position; // 이동 방향
             dist = dir.magnitude; // 목표지점까지의 거리
