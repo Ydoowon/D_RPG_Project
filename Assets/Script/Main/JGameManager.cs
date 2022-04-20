@@ -39,19 +39,9 @@ public class JGameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject); //씬이 바뀌어도 게임오브젝트가 파괴되지 않도록함
     }
 
-    public struct Player_Stat
-    {
-        string Nickname;
-        int Money;
-        int Crystal;
-
-    }
-
-    Player_Stat player_stat;
-
     void Start()
     {
-        player_stat = new Player_Stat();
+        
         
     }
 
